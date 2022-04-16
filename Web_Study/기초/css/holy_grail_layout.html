@@ -1,0 +1,36 @@
+<html>
+<head>
+    <style>
+        .container{
+/*            layout을 잡으려면 상위태그에 flex를 잡아야 한다.*/
+            display:flex;
+/*            direction으로 세로정렬 가로정렬 바꿀수 있다.*/
+            flex-direction:row;
+            
+        }
+        .item{
+            text-align:center;
+            border:1px red solid;
+/*            flex의 기본 가로길이를 30px로 잡는다*/
+            flex-basis:300px;
+/*            item 전체 비율을 1로 잡는다.*/
+            flex-grow:1;
+            height:300px;
+            
+        }
+/*        item중 2번째를 비율을 2로 잡는다.*/
+        .item:nth-child(2){
+            flex-grow:2;
+/*            shrink는 크기축소시 길이의 축소를 알려준다. 0이면 안줄어든다. 숫자가 있으면 숫자가 높을수록 비율에따라 줄어든다.*/
+            flex-shrink:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>

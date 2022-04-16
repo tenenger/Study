@@ -1,0 +1,5 @@
+기존에 존재하는 저장소 깃허브 올리기
+
+git remote add origin https://github.com/tenenger/Redux_Study.git
+git branch -M main
+git push -u origin main

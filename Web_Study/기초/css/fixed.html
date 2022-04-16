@@ -1,0 +1,25 @@
+<html>
+<head>
+    <style>
+        #me{
+/*            스크롤해도 상단에 고정된다.*/
+            position:fixed;
+            border:1px black solid;
+            height:30px;
+            width:100%;
+            top:0;
+            text-align:center;
+        }
+/*        위에가 고정되면 body를 고정크기만큼 띄어준다.*/
+        body{
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">parent
+        <div id="me">me</div>
+    </div>
+</body>
+</html>

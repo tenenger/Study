@@ -1,0 +1,70 @@
+<!-- 정보를 입력받을때 사용 -->
+<form
+    action="입력된 정보 저장할 서버"
+    id="고유값"
+    method="get, post"
+    autocomplete="on, off (이전 입력 내역 있을 시 자동완성)"
+></form>
+
+<!-- form 태그안에 들어가는 요소들 -->
+<!-- 클릭 영역 확장 -->
+<label for="input태그 또는 select태그의 id값"></label>
+
+<!-- 입력태그 -->
+<input autocomplete="form의 autocomplete와 동일" name="서버로 전성될 항목명" />
+
+<!-- 공통 속성 -->
+<!-- autofocus: 페이지 접속시 input태그에 커서 자동이동 -->
+<!-- disabled: 수정불가, 입력된 값 전송 X -->
+<!-- readonly(수정불가, 입력된 값 전송 O) -->
+<!-- autofocus: 페이지 접속시 input태그에 커서 자동이동 -->
+
+<!-- type별 특수 속성 -->
+<!-- 특수 속성 -->
+<input type="text password(화면에 *로 표시됨)" />
+<input type="tel(모바일 전화번호 키패드 표시)" />
+<input type="email(이메일@이 포함되어야함)" />
+<!-- placeholder: 입력값이 공백일 시 보여질 텍스트 -->
+<!-- maxlength: 최대 입력값의 길이 -->
+
+<!-- 특수 속성 -->
+<input type="number(숫자만 입력가능)" />
+<!-- max: 숫자(최대 입력값) -->
+<!-- min: 숫자(최소 입력값) -->
+<!-- step: 숫자(입력 가능한 값 간격) -->
+
+<!-- 특수 속성 -->
+<input type="checkbox(체크 박스)" checked />
+<!-- 속성을 그냥 입력하면, 기본 boolean은 true이다. -->
+<!-- checked: boolean(체크로 초기화 여부) -->
+
+<!-- 특수 속성 -->
+<input type="radio(택일 )" checked />
+<!-- 속성을 그냥 입력하면, 기본 boolean은 true이다. -->
+<!-- checked: boolean(체크로 초기화 여부) -->
+<!-- name: radio 태그 연결 -->
+
+<!-- 특수 속성 -->
+<input type="file(파일 첨부)" multiple />
+<!-- 속성을 그냥 입력하면, 기본 boolean은 true이다. -->
+<!-- multiple: boolean(여러 파일 가능) -->
+
+<!-- 드롭박스 -->
+<select name="서버로 전성될 항목명" id="고유값, label과 연결">
+    <option value="서버로 전성될 값"></option>
+</select>
+<!-- 속성 -->
+<!-- selected: boolean(기본 선택) -->
+
+<!-- input태그 확장판, 여러줄 입력가능 -->
+<textarea name="(서버로 전송될 value값의 이름)"></textarea>
+<!-- 속성 -->
+<!-- placeholder: 입력값이 공백일 시 보여질 텍스트 -->
+<!-- maxlength: 최대 글자수 -->
+<!-- rows: 가로 길이 -->
+<!-- rows: 세로 길이 -->
+
+<!-- 버튼 -->
+<button type="submit(form 제출), button(버튼, 기본값)"></button>
+<!-- 속성 -->
+<!-- disabled: 수정불가, 입력된 값 전송 X -->

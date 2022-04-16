@@ -1,0 +1,23 @@
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+/*        미디어 쿼리 작성시 cascade 우선순위 꼭 확인하여 작성할것.*/
+        div{background-color:blue;}
+        @media (max-width:700px){
+            div{background-color:black;}
+        }
+        @media (min-width:701px){
+            div{background-color:purple;}                        
+        }
+        @media (max-width:600px){
+            div{background-color:red;}
+        }
+    </style>
+</head>
+<body>
+    <div>600까지 빨강색</div>
+    <div>601~700까지 검정색</div>
+    <div>701부터 보라색</div>
+</body>
+</html>

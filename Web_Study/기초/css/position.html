@@ -1,0 +1,23 @@
+<html>
+<head>
+    <style>
+        div{
+            border:10px red solid;
+            margin:10px;
+        }
+/*        기본 postion은 static이다.*/
+/*        position이 absolute이면 position이 relative가 나올때 까지 body를 기준으로 서있다.*/
+        #child{
+            position:absolute;
+            left:0;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">parent
+        <div id="child">child</div>
+    </div>
+</body>
+</html>

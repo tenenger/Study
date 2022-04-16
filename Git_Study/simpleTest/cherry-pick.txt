@@ -1,0 +1,7 @@
+1. main branch에서 cherry-pick.txt 파일 생성
+
+4. dev2 branch에서 수정1
+
+5. dev2 branch에서 수정2
+
+2. dev1 branch에서 수정1

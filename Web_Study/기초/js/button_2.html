@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var target = document.querySelector('body');
+    </script>
+<!--    ""로 감싸면 안에는 ''를 써야 작동된다.-->
+<!--    버튼하나로 night_day모드를 작동시킬 수 있다.-->
+<!--    this는 해당 태그에만 작동된다.-->
+<!--    많이쓰이는 문장은 변수로 지정해 사용해도 된다.-->
+   <input type="button" value="night" onclick="
+   if (this.value === 'night') {
+       target.style.backgroundColor='black';
+       target.style.color='white';
+       this.value = 'day';
+    }
+    else{
+       target.style.backgroundColor='white';
+       target.style.color='black';
+       this.value = 'night';
+    }
+   ">
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--   함수를 이용해 다크_아침모드를 만들 수 있다. -> 코드가 더 깔끔해진다.-->
+    <script>
+        function handler(self) {
+            var target = document.querySelector('body');
+            if (self.value === '다크모드') {
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                self.value = '아침모드';
+            }
+            else {
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                self.value = '다크모드';
+            }
+        }
+    </script>
+    <input type="button" value="다크모드" onclick="handler(this)">
+</body>
+</html>
